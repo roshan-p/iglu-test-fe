@@ -49,7 +49,7 @@ export function MiniDropdown({
 
         {openSelect && (
           <div
-            className="width-[70px] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            className="width-[70px] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none absolute"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
