@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import "./ScenarioPage.css";
 import { Tabs } from "../../components/Tabs";
 import { ScenarioStep1 } from "./ScenarioStep1";
