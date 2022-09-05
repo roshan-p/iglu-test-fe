@@ -195,7 +195,7 @@ export function ScenarioStep2() {
         modalContent={
           <div className="text-center">
             <h1>Select a Function of Outdoor Temperature</h1>
-            <div className="text-right mt-[40px] mb-[40px] overflow-scroll mr-[200px]">
+            <div className="text-right mt-[40px] mb-[40px] overflow-hidden mr-[200px]">
               <Button
                 btnTxt="New Function"
                 onBtnClick={() => {
