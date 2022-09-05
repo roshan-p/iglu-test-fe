@@ -1,15 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import { toggleMachine } from './states/toggleMachine';
-import { useMachine } from "@xstate/react";
-import './App.css';
-import { Scenario } from './pages/Scenario';
+import React from "react";
+import "./App.css";
+import { MainPage } from "./pages/MainPage";
+import { ScenarioProvider } from "./context/ScenarioContext";
+import { ODTProvider } from "./context/ODTContext";
+import { TODProvider } from "./context/TODContext";
 
 function App() {
-
   return (
     <div className="App">
-   <Scenario></Scenario>
+      <ScenarioProvider>
+        <ODTProvider>
+          <TODProvider>
+            <MainPage />
+          </TODProvider>
+        </ODTProvider>
+      </ScenarioProvider>
     </div>
   );
 }

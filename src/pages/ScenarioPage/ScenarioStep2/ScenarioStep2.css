@@ -1,0 +1,12 @@
+div[data-value] {
+    position: relative;
+  }
+div[data-value]:after {
+    content: attr(data-value) "℃";
+    position: absolute;
+    top: 8px; 
+    left: 10px; 
+  }
+  div[data-value] input {
+    color: #FFF !important; /* Optional bug avoid visual bugs */
+  }
